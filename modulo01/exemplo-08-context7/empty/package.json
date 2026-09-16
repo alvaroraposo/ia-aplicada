@@ -1,0 +1,24 @@
+{
+  "name": "db-leaky-connections",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Observability demo for leaked PostgreSQL connections",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/main.js",
+    "dev": "tsx watch src/main.ts",
+    "test": "node --import tsx --test test/main.test.ts"
+  },
+  "dependencies": {
+    "fastify": "^5.2.1",
+    "pg": "^8.13.1",
+    "prom-client": "^15.1.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/pg": "^8.11.10",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
